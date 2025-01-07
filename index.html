@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="href" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./Images/odin-lined.png" alt="Odin Logo">
+            <span>ODIN</span>
+        </div>
+        <div class="footer">Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/a-bunch-of-flowers-that-are-in-the-grass-5Edv_9uVgss?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div>
+    </div>
+    <form class="form" action="" method="post">
+        <div class="para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos molestias ea quisquam! Consequuntur dignissimos iste harum numquam officia quas at iusto ducimus fugit aut, dolore doloribus architecto modi qui. Repellendus!
+        </div>
+        <div class="input-container">
+            <div class="input-label-pair">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="input-label-pair">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="input-label-pair">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input-label-pair">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" id="phone-number" name="phone-number">
+            </div>
+            <div class="input-label-pair">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="input-label-pair">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button class="button" id="create-account-button">Create Account</button>
+            <p class="log-in-para">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </form>
 </body>
 </html>
