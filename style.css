@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 2px dotted red; */
+    outline: none;
 }
 
 body{
@@ -95,6 +95,10 @@ body{
     font-weight: bold;
 }
 
+.call-to-action{
+    padding: 20px 0 0 100px;
+}
+
 .input-container{
     padding: 50px 300px 50px 50px;
     display: flex;
@@ -119,7 +123,7 @@ input{
 }
 
 input:user-invalid{
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 input:user-valid{
