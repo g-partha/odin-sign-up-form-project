@@ -9,25 +9,27 @@
 :root{
     --color-1: white;
     --color-2: rgba(45, 44, 44, 0.504);
+    --color-3: rgb(226, 226, 226);
+    --color-4: rgb(77, 95, 92);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 2px dotted red; */
 }
 
 body{
     display: flex;
     height: 100vh;
     width: 100vw;
-    align-items: stretch;
 }
 .sidebar{
     background-image: url(./Images/background-image.jpg);
     background-size: cover;
     width: 30%;
-    flex: 2 0 auto;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,16 +70,87 @@ body{
     color: var(--color-1);
 }
 
-.form{
-    flex: 3 0 auto;
+.sign-up-form{
+    flex: 1 1 auto;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sign-up-form > * {
+    flex: 1 1 auto;
+
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 200px 30px 30px;
+    background-color: var(--color-3);
+    height: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .input-container{
+    padding: 50px 300px 50px 50px;
     display: flex;
     flex-wrap: wrap;
+    height: 30%;
+    font-size: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    
+
+}
+
+.input-group{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    flex: 1 1 auto;
 }
 
 input{
     display: block;
+    width: 200px;
+}
+
+input:user-invalid{
+    border: 1px solid red;
+}
+
+input:user-valid{
+    border: 2px solid green;
+}
+
+input:focus{
+    border: 2px solid blue;
+    outline: none;
+}
+
+.buttons-container{
+    background-color: var(--color-3);
+    height: 35%;
+    padding: 30px 0 0 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 11px;
+}
+
+.button{
+    color:aliceblue;
+    background-color: var(--color-4);
+    border-color:var(--color-4);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 120px;
+}
+
+.buttons-container a{
+    text-decoration: none;
 }
